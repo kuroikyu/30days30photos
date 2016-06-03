@@ -1,0 +1,303 @@
+$mainColour: #8e44ad
+// $mainColour: rgb(255, 105, 97)
+$secondaryColour: #16A085
+// $secondaryColour: rgb(97,255,184)
+$bodyColour: rgba(0,0,0,0.7)
+$wedgeTop: 480px
+$wedgeMid: 500px
+$greyTint: #f5f5f5
+
+$mediaS: 750px
+$mediaM: 1200px
+$mediaL: 1750px
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary
+  display: block
+
+*::selection
+  color: white
+  background-color: rgb(97,168,255)
+
+body
+  margin: 0
+  padding: 0
+  background: white
+  position: relative
+
+  font-family: "Roboto", sans-serif
+  color: $bodyColour
+  line-height: 1.6
+  font-size: 14px
+  -webkit-font-smoothing: antialiased
+
+.top-slash
+  width: 100%
+  padding-top: 500px
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  background-color: $mainColour
+  overflow: hidden
+
+  &:after
+    content: ''
+    display: block
+    background: white
+    height: $wedgeTop
+    width: 8000px
+    position: absolute
+    z-index: 1
+    bottom: -50%
+    left: 50%
+    margin-left: -4000px
+    transform: rotate(-9deg)
+  &:before
+    content: ''
+    display: block
+    background: white
+    height: $wedgeTop
+    width: 8000px
+    position: absolute
+    z-index: 1
+    bottom: -50%
+    left: 50%
+    margin-left: -4000px
+    transform: rotate(9deg)
+
+header
+  height: 80px
+  position: relative
+  text-align: center
+  color: rgba(255,255,255,0.9)
+
+  .logo
+    font-size: 28px
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -26px
+    margin-top: -22px
+    em
+      font-size: 24px
+      margin: 0px 4px
+
+.hero
+  padding: 20px 20px 40px
+  text-align: center
+
+  .title
+    font-size: 22px
+    font-weight: 400
+
+  .section-title-rule
+    border-top-color: rgba(255,255,255,0.15)
+    display: none
+
+    &.bottom
+      display: block
+
+.flex-about-content
+  font-size: 18px
+  font-weight: 300
+  color: rgba(255,255,255,0.9)
+
+  max-width: 380px
+  margin-bottom: 20px
+
+  margin-left: auto
+  margin-right: auto
+
+hr
+  border: solid #ddd
+  border-width: 1px 0 0
+  clear: both
+  margin: 10px 0 30px
+  height: 0
+  box-sizing: content-box
+  overflow: visible
+
+  &.section-title-rule
+    border-top: 2px solid $mainColour
+    width: 100px
+    margin: 10px auto 30px
+
+section, footer
+  padding: 40px 0px
+
+  .constrainer
+    max-width: 360px
+    margin: 0 auto
+    padding: 0 30px
+
+.what-is-this
+  position: relative
+  overflow: hidden
+
+.what-is-this-slash
+  position: absolute
+  z-index: -1
+  height: 100%
+  width: 100%
+
+  &:after
+    content: ''
+    display: block
+    background: $greyTint
+    height: $wedgeMid
+    width: 8000px
+    position: absolute
+    z-index: 1
+    bottom: -180%
+    left: 50%
+    margin-left: -4000px
+    transform: rotate(-9deg)
+
+  &:before
+    content: ''
+    display: block
+    background: $greyTint
+    height: $wedgeMid
+    width: 8000px
+    position: absolute
+    z-index: 1
+    bottom: -180%
+    left: 50%
+    margin-left: -4000px
+    transform: rotate(9deg)
+
+.section-head
+  font-size: 18px
+  color: rgba(0,0,0,0.8)
+  text-align: center
+
+.media-object
+  display: flex
+
+  .media
+    margin-right: 20px
+    flex-shrink: 0
+
+.avatar
+  width: 50px
+  height: 50px
+  border-radius: 50%
+
+p
+  margin: 0 0 20px 0
+
+.photos-list
+  text-align: center
+
+  & .constrainer
+    @media screen and (min-width: $mediaS)
+      max-width: 500px
+    @media screen and (min-width: $mediaM)
+      max-width: 1000px
+    @media screen and (min-width: $mediaL)
+      max-width: 1400px
+
+  &.tint
+    background-color: $greyTint
+
+  input
+    display: none
+    &:checked ~ .overlay
+      display: block
+
+    &:checked + label
+
+      .media
+        position: fixed
+        left: 0
+        top: 0
+
+        width: 100vw
+        height: 100vh
+        // margin-top: -50%
+        z-index: 10
+
+
+
+  label
+    display: inline-block
+    padding: 10px
+    margin-bottom: 20px
+    border-radius: 3px
+    background-color: white
+    box-shadow: 0 0 1px rgba(0,0,0, 0.3)
+    text-decoration: none
+    @media screen and (min-width: $mediaM)
+      max-width: 300px
+    @media screen and (min-width: $mediaL)
+      max-width: 430px
+
+    .media
+
+      img
+        // display: none
+        width: 100%
+
+
+
+
+
+
+
+
+    .desc p
+      margin-bottom: 0
+
+div.photos-list
+  @media screen and (min-width: $mediaM)
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    align-items: baseline
+
+svg
+  display: none
+
+  &:not(:root)
+    overflow: hidden
+
+.day
+  color: $mainColour
+
+a
+  color: $bodyColour
+
+.special
+  background-color: $secondaryColour
+  color: rgba(255, 255, 255, 0.8)
+  // color: rgba(0,0,0,0.7)
+  text-align: center
+  font-size: 18px
+  a
+    text-decoration: none
+    font-weight: bold
+    color: #fff
+    color: white
+
+.overlay
+  display: none
+  padding: 0
+  position: fixed
+  left: 0
+  top: 0
+  height: 100vh
+  width: 100vw
+
+  background-color: rgba(0,0,0,0.7)
+  z-index: 2
+
+
+footer
+  text-align: center
+
+  li
+    list-style: none
+.white
+  color: rgba(255,255,255,0.8)
+.tint-reversed
+  background-color: #666
