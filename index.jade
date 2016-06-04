@@ -21,141 +21,139 @@ html(lang="en")
           p
             strong.day #{day} 
             || #{place}
-    body
-      
 
-      //- End of mixins  
+    //- End of mixins  
+  body
+    .top-slash
 
-      .top-slash
+    header
+      .logo &lt;<em>K</em>&gt;
 
-      header
-          .logo &lt;<em>K</em>&gt;
+    section.hero
+      .flex-container
+        .flex-about-content
+          hr.section-title-rule
+          .mission.title 30 days - 30 photos 
+          .mission Self-learning to build a website requires content and patience.
+          hr.section-title-rule.bottom
 
-      section.hero
-          .flex-container
-              .flex-about-content
-                  hr.section-title-rule
-                  .mission.title 30 days - 30 photos 
-                  .mission Self-learning to build a website requires content and patience.
-                  hr.section-title-rule.bottom
+    section.what-is-this 
+      .what-is-this-slash
+      .constrainer
+        .section-head What is this?
+        hr.section-title-rule
+        .media-object
+          .media
+            img.avatar(src="https://pbs.twimg.com/profile_images/643935077643218944/RWkbOP1Q.jpg")
+          .content
+            p I created this website to teach myself how to build a website. Doing that requires time - 30 days - to write the code and content - 30 photos.
 
-      section.what-is-this 
-          .what-is-this-slash
-          .constrainer
-              .section-head What is this?
-              hr.section-title-rule
-              .media-object
-                  .media
-                      img.avatar(src="https://pbs.twimg.com/profile_images/643935077643218944/RWkbOP1Q.jpg")
-                  .content
-                      p I created this website to teach myself how to build a website. Doing that requires time - 30 days - to write the code and content - 30 photos.
+    section.photos-list.tint      
+      .constrainer
+        .section-head Photos
+        hr.section-title-rule
+        .photos-list
 
-      section.photos-list.tint      
-          .constrainer
-              .section-head Photos
-              hr.section-title-rule
-              .photos-list
+          // Day 1
+          +image("Day 1", "Sutton Coldfield (UK)", "day1", "assets/img/day01.jpg")
 
-                  // Day 1
-                  +image("Day 1", "Sutton Coldfield (UK)", "day1", "assets/img/day01.jpg")
+          // Day 2
+          +image("Day 2", "Measham (UK)", "day2", "assets/img/day02.jpg")
 
-                  // Day 2
-                  +image("Day 2", "Measham (UK)", "day2", "assets/img/day02.jpg")
+          // Day 3
+          +image("Day 3", "Appleby Magna (UK)", "day3", "assets/img/day03.jpg")
 
-                  // Day 3
-                  +image("Day 3", "Appleby Magna (UK)", "day3", "assets/img/day03.jpg")
+          // Day 4
+          +image("Day 4", "The office", "day4", "assets/img/day04.jpg")
 
-                  // Day 4
-                  +image("Day 4", "The office", "day4", "assets/img/day04.jpg")
+          // Day 5
+          +image("Day 5", " - ", "day5", "assets/img/day05.jpg")
 
-                  // Day 5
-                  +image("Day 5", " - ", "day5", "assets/img/day05.jpg")
+          // Day 6
+          +image("Day 6", " - ", "#day6", "assets/img/day06.jpg")
 
-                  // Day 6
-                  +image("Day 6", " - ", "#day6", "assets/img/day06.jpg")
+          // Day 7
+          +image("Day 7", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 7
-                  +image("Day 7", " - ", "#", "http://placehold.it/430x320")
+          // Day 8
+          +image("Day 8", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 8
-                  +image("Day 8", " - ", "#", "http://placehold.it/430x320")
+          // Day 9
+          +image("Day 9", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 9
-                  +image("Day 9", " - ", "#", "http://placehold.it/430x320")
+          // Day 10
+          +image("Day 10", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 10
-                  +image("Day 10", " - ", "#", "http://placehold.it/430x320")
+          // Day 11
+          +image("Day 11", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 11
-                  +image("Day 11", " - ", "#", "http://placehold.it/430x320")
+          // Day 12
+          +image("Day 12", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 12
-                  +image("Day 12", " - ", "#", "http://placehold.it/430x320")
+          // Day 13
+          +image("Day 13", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 13
-                  +image("Day 13", " - ", "#", "http://placehold.it/430x320")
+          // Day 14
+          +image("Day 14", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 14
-                  +image("Day 14", " - ", "#", "http://placehold.it/430x320")
+          // Day 15
+          +image("Day 15", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 15
-                  +image("Day 15", " - ", "#", "http://placehold.it/430x320")
+          // Day 16
+          +image("Day 16", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 16
-                  +image("Day 16", " - ", "#", "http://placehold.it/430x320")
+          // Day 17
+          +image("Day 17", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 17
-                  +image("Day 17", " - ", "#", "http://placehold.it/430x320")
+          // Day 18
+          +image("Day 18", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 18
-                  +image("Day 18", " - ", "#", "http://placehold.it/430x320")
+          // Day 19
+          +image("Day 19", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 19
-                  +image("Day 19", " - ", "#", "http://placehold.it/430x320")
+          // Day 20
+          +image("Day 20", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 20
-                  +image("Day 20", " - ", "#", "http://placehold.it/430x320")
+          // Day 21
+          +image("Day 21", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 21
-                  +image("Day 21", " - ", "#", "http://placehold.it/430x320")
+          // Day 22
+          +image("Day 22", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 22
-                  +image("Day 22", " - ", "#", "http://placehold.it/430x320")
+          // Day 23
+          +image("Day 23", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 23
-                  +image("Day 23", " - ", "#", "http://placehold.it/430x320")
+          // Day 24
+          +image("Day 24", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 24
-                  +image("Day 24", " - ", "#", "http://placehold.it/430x320")
+          // Day 25
+          +image("Day 25", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 25
-                  +image("Day 25", " - ", "#", "http://placehold.it/430x320")
+          // Day 26
+          +image("Day 26", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 26
-                  +image("Day 26", " - ", "#", "http://placehold.it/430x320")
+          // Day 27
+          +image("Day 27", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 27
-                  +image("Day 27", " - ", "#", "http://placehold.it/430x320")
+          // Day 28
+          +image("Day 28", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 28
-                  +image("Day 28", " - ", "#", "http://placehold.it/430x320")
+          // Day 29
+          +image("Day 29", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 29
-                  +image("Day 29", " - ", "#", "http://placehold.it/430x320")
+          // Day 30
+          +image("Day 30", " - ", "#", "http://placehold.it/430x320")
 
-                  // Day 30
-                  +image("Day 30", " - ", "#", "http://placehold.it/430x320")
+    section.special
+      .constrainer
+        p Thanks for making it so far!
+        p I'll be doing more projects like this one in the future. Follow me on Twitter 
+          a(href="#")
+              | @kuroikyu
+          |  if you want to know what I'm working on now! 
+        p =)
 
-      section.special
-          .constrainer
-              p Thanks for making it so far!
-              p I'll be doing more projects like this one in the future. Follow me on Twitter 
-                  a(href="#")
-                      | @kuroikyu
-                  |  if you want to know what I'm working on now! 
-              p =)
-
-      footer.white.tint-reversed
-          .constrainer
-              ul.link-list.text-center
-                  li Copyright &copy 2016 Álvaro J. Martínez
+    footer.white.tint-reversed
+      .constrainer
+        ul.link-list.text-center
+          li Copyright &copy 2016 Álvaro J. Martínez
