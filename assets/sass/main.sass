@@ -202,22 +202,9 @@ p
 
   input
     display: none
-    &:checked ~ .overlay
-      display: block
 
     &:checked + label
-
-      .media
-        position: fixed
-        left: 0
-        top: 0
-
-        width: 100vw
-        height: 100vh
-        // margin-top: -50%
-        z-index: 10
-
-
+      max-width: none
 
   label
     display: inline-block
@@ -232,18 +219,8 @@ p
     @media screen and (min-width: $mediaL)
       max-width: 430px
 
-    .media
-
-      img
-        // display: none
+    .media img
         width: 100%
-
-
-
-
-
-
-
 
     .desc p
       margin-bottom: 0
@@ -270,7 +247,6 @@ a
 .special
   background-color: $secondaryColour
   color: rgba(255, 255, 255, 0.8)
-  // color: rgba(0,0,0,0.7)
   text-align: center
   font-size: 18px
   a
@@ -290,7 +266,6 @@ a
 
   background-color: rgba(0,0,0,0.7)
   z-index: 2
-
 
 footer
   text-align: center
