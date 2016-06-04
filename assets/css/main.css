@@ -2,6 +2,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   display: block;
 }
 
+*::-moz-selection {
+  color: white;
+  background-color: #61a8ff;
+}
+
 *::selection {
   color: white;
   background-color: #61a8ff;
@@ -41,7 +46,9 @@ body {
   bottom: -50%;
   left: 50%;
   margin-left: -4000px;
-  transform: rotate(-9deg);
+  -webkit-transform: rotate(-9deg);
+      -ms-transform: rotate(-9deg);
+          transform: rotate(-9deg);
 }
 
 .top-slash:before {
@@ -55,7 +62,9 @@ body {
   bottom: -50%;
   left: 50%;
   margin-left: -4000px;
-  transform: rotate(9deg);
+  -webkit-transform: rotate(9deg);
+      -ms-transform: rotate(9deg);
+          transform: rotate(9deg);
 }
 
 header {
@@ -157,7 +166,9 @@ section .constrainer, footer .constrainer {
   bottom: -180%;
   left: 50%;
   margin-left: -4000px;
-  transform: rotate(-9deg);
+  -webkit-transform: rotate(-9deg);
+      -ms-transform: rotate(-9deg);
+          transform: rotate(-9deg);
 }
 
 .what-is-this-slash:before {
@@ -171,7 +182,9 @@ section .constrainer, footer .constrainer {
   bottom: -180%;
   left: 50%;
   margin-left: -4000px;
-  transform: rotate(9deg);
+  -webkit-transform: rotate(9deg);
+      -ms-transform: rotate(9deg);
+          transform: rotate(9deg);
 }
 
 .section-head {
@@ -181,12 +194,16 @@ section .constrainer, footer .constrainer {
 }
 
 .media-object {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .media-object .media {
   margin-right: 20px;
-  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 
 .avatar {
@@ -265,10 +282,18 @@ p {
 
 @media screen and (min-width: 1200px) {
   div.photos-list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: baseline;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
