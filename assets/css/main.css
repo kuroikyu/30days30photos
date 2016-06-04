@@ -229,17 +229,8 @@ p {
   display: none;
 }
 
-.photos-list input:checked ~ .overlay {
-  display: block;
-}
-
-.photos-list input:checked + label .media {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 10;
+.photos-list input:checked + label {
+  max-width: none;
 }
 
 .photos-list label {
