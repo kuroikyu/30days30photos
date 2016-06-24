@@ -9,6 +9,7 @@ html(lang="en")
     title= "30 days 30 photos | Kuroikyu"
     
     link(rel="stylesheet" type="text/css" href="assets/css/main.css")
+    link(rel="icon" href="assets/img/30logo.png")
       
       
     //- Mixins  
@@ -27,7 +28,11 @@ html(lang="en")
     .top-slash
 
     header
-      .logo &lt;<em>K</em>&gt;
+      //- .logo 
+      #logo
+        //&lt;<em>K</em>&gt;
+        include assets/img/30.svg
+      //- img(src="assets/img/30.svg", alt="30")#logo
 
     section.hero
       .flex-container
@@ -156,4 +161,4 @@ html(lang="en")
     footer.white.tint-reversed
       .constrainer
         ul.link-list.text-center
-          li Copyright &copy 2016 Álvaro J. Martínez
+          li Kuroi Kyu &copy 2016 
