@@ -74,18 +74,27 @@ header {
   color: rgba(255, 255, 255, 0.9);
 }
 
-header .logo {
-  font-size: 28px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -26px;
-  margin-top: -22px;
+header #logo {
+  width: 100px;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
-header .logo em {
-  font-size: 24px;
-  margin: 0px 4px;
+header #logo svg {
+  fill: white;
+  display: block;
+}
+
+header #logo svg .st0, header #logo svg .st1 {
+  fill: white;
+}
+
+header #logo svg .st0 {
+  opacity: .33;
+}
+
+header #logo svg .st1 {
+  opacity: .66;
 }
 
 .hero {
