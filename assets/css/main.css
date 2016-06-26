@@ -82,7 +82,6 @@ header #logo {
 
 header #logo svg {
   fill: white;
-  display: block;
 }
 
 header #logo svg .st0, header #logo svg .st1 {
@@ -98,7 +97,7 @@ header #logo svg .st1 {
 }
 
 .hero {
-  padding: 20px 20px 40px;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -306,14 +305,6 @@ p {
   }
 }
 
-svg {
-  display: none;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
 .day {
   color: #8e44ad;
 }
@@ -333,7 +324,11 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
-  color: white;
+  transition: all 150ms ease-in-out;
+}
+
+.special a:hover {
+  box-shadow: 0 2px 0 0 #fff;
 }
 
 .overlay {
